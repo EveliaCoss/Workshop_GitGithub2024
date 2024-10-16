@@ -1,0 +1,28 @@
+# Introducción a Git / GitHub
+
+## ¿Por qué hacer control de versiones de nuestros proyectos?
+
+1.  ✅ Los proyectos suelen cambiar y crecer.
+2.  💾 Es díficil saber cuáles fueron todos los cambios a lo largo del tiempo (en especial tiempos largos, hazlo por tu yo del **futuro!**).
+3.  🤔 Las colaboraciones se pueden complicar sin un buen control de versiones.
+4.  🔐 Seguridad.
+
+[!["notFinal.doc" by Jorge Cham, https://www.phdcomics.com](https://swcarpentry.github.io/git-novice/fig/phd101212s.png){width="300"}](https://swcarpentry.github.io/git-novice/01-basics.html)
+
+## Git
+
+Git es un sistema de **control de versiones distribuido, gratuito y de código abierto**, diseñado para manejar todo tipo de proyectos, desde los más pequeños hasta los más grandes, con rapidez y eficiencia.
+
+Git es fácil de aprender y ocupa poco espacio con un **rendimiento rapidísimo**. Supera a las herramientas SCM como Subversion, CVS, Perforce y ClearCase con características como la ramificación local barata, las cómodas áreas de preparación y los múltiples flujos de trabajo.
+
+En resumen:
+
+-   Git es un sistema de control de versiones
+
+-   Git funciona con GitHub, Bitbucket o GitLab
+
+## **Git vs controles de versión a mano**
+
+[![](https://comunidadbioinfo.github.io/cdsb2023/img/git_vers.png){width="600"}](https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html)
+
+Con Git cada contribuidor tiene una copia del repositorio central, con todos los archivos y la historia de los cambios por los que han pasado.

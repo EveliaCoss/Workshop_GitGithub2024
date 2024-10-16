@@ -1,0 +1,83 @@
+::: {layout-ncol="2"}
+![](https://liigh.unam.mx/wp-content/uploads/2016/05/logo-liigh-unam.png)
+:::
+
+# Información general {.unnumbered}
+
+-   ::: {.panel-tabset group="globalInfo"}
+    ### Sobre el curso 📌
+
+    Este documento se basa en "[Happy Git with R](https://happygitwithr.com/)" de Jenny Bryan, los STAT 545 TAs, Jim Hester, así como las[guías practicas de Github](https://docs.github.com/es/get-started/start-your-journey/hello-world).
+
+    -   **Fechas:** 16 y 18 octubre 2024
+
+    -   **Duración del curso:** 3 horas y 30 minutos
+
+    #### **Instructora:**
+
+    -   **Evelia Lorena Coss-Navarrete** - PostDoc, LIIGH-UNAM.
+
+    #### **Resumen:**
+
+    Este tutorial te enseñará los conceptos fundamentales de GitHub, incluyendo **repositorios, ramas, confirmaciones y solicitudes de cambio**. A través de la creación de tu propio repositorio personalizado y pagina web, aprenderás a gestionar el flujo de trabajo de las solicitudes de cambio, un método ampliamente utilizado para colaborar en la creación y revisión de código.
+
+    #### **Objetivos:**
+
+    En esta guía rápida aprenderás a:
+
+    1.  Crear y gestionar un repositorio.
+
+    2.  Iniciar y administrar una nueva rama.
+
+    3.  Realizar cambios en un archivo y enviarlos a GitHub como confirmación.
+
+    4.  Crear tu página de inicio en Github.
+
+    5.  Crear tu página web.
+
+    ## Citar y reutilizar el material del curso
+
+    Los datos del curso se pueden reutilizar y adaptar libremente con la debida atribución. Todos los datos de los cursos de estos repositorios están sujetos a la licencia [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+    ### Requisitos previos
+
+    -   Debes tener una **cuenta de usuario de GitHub**. Para más información, consulta "[Creación de una cuenta en GitHub](https://docs.github.com/es/get-started/start-your-journey/creating-an-account-on-github)".
+
+    -   No necesitas saber cómo codificar, utilizar la línea de comandos o instalar Git (el software de control de versiones en el que está compilado GitHub).
+
+    -   Contar con una terminal con Git, en Windows puedes usar [Git Bash.](https://miguel-mx.github.io/2024-01-24-ccm-unam-swc/)
+
+    ### Agenda 📆 {#agenda}
+
+    +-------------------------------------------------------------------------------------------+--------+
+    | Tema                                                                                      | Tiempo |
+    +===========================================================================================+:======:+
+    | 🔷 **Sección** **1 - Introduction and Quality control (1 h y 30 min) - (8:30 - 10:00 h)** |        |
+    +-------------------------------------------------------------------------------------------+--------+
+    | -   Creación de una cuenta en GitHub                                                      | 5 min  |
+    +-------------------------------------------------------------------------------------------+--------+
+    | -   Introducción a Git / GitHub                                                           | 15 min |
+    +-------------------------------------------------------------------------------------------+--------+
+    |                                                                                           |        |
+    +-------------------------------------------------------------------------------------------+--------+
+    | -   **Práctica 1:** scATAC-seq Pre-Processing and Quality Control                         | 30 min |
+    +-------------------------------------------------------------------------------------------+--------+
+    | ☕ *Coffee break (10 min) - (10:30-11:00 h) ☕*                                           |        |
+    +-------------------------------------------------------------------------------------------+--------+
+    | 🔷  **Sección** **2 - scATAC-seq Downstream analysis** **(2 h) - (11:00-13:00 h)**        |        |
+    +-------------------------------------------------------------------------------------------+--------+
+    | -   **Práctica 2:** scATAC-seq Downstream                                                 | 1 h    |
+    +-------------------------------------------------------------------------------------------+--------+
+    | -   **Practical 15:** Analyses and scRNA-seq Integration                                  | 1 h    |
+    +-------------------------------------------------------------------------------------------+--------+
+    | *🍖🍗 Lunch (1 h) - (13:00 - 14:00) 🍖🍗*                                                 |        |
+    +-------------------------------------------------------------------------------------------+--------+
+    | 🔷  **Sección 3 - Motif analysis and results (14:00 - 15:30 h)**                          |        |
+    +-------------------------------------------------------------------------------------------+--------+
+    | -   **Practical 16:** Motif analysis with Signac                                          | 30 min |
+    +-------------------------------------------------------------------------------------------+--------+
+    | -   **Practical 17:** Exploring results (graphs)                                          | 30 min |
+    +-------------------------------------------------------------------------------------------+--------+
+    | -   Other tools used in scATAC-seq                                                        | 30 min |
+    +-------------------------------------------------------------------------------------------+--------+
+    :::
