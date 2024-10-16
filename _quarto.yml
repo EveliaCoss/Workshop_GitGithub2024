@@ -19,8 +19,6 @@ book:
   favicon: "ViernesBioinfo_logo.png" # icono de la pagina en pestana
 
 
-bibliography: references.bib
-
 format:
   html:
     toc-depth: 4
