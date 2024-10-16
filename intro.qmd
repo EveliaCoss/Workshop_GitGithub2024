@@ -5,7 +5,7 @@
 ### **Hacia una biología computacional más reproducible, transparente y colaborativa 💜**
 
 ::: callout-tip
-\"Los hechos individuales no reproducibles no tienen ninguna importancia para la ciencia\"
+"Los hechos individuales no reproducibles no tienen ninguna importancia para la ciencia"
 
 Karl Popper
 :::
