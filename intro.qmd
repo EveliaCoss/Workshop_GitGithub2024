@@ -1,0 +1,70 @@
+# Introducción a Git / GitHub
+
+## ¿Por qué hacer control de versiones de nuestros proyectos?
+
+1.  ✅ Los proyectos suelen cambiar y crecer.
+2.  💾 Es díficil saber cuáles fueron todos los cambios a lo largo del tiempo (en especial tiempos largos, hazlo por tu yo del **futuro!**).
+3.  🤔 Las colaboraciones se pueden complicar sin un buen control de versiones.
+4.  🔐 Seguridad.
+
+[!["notFinal.doc" by Jorge Cham, https://www.phdcomics.com](https://swcarpentry.github.io/git-novice/fig/phd101212s.png){width="300"}](https://swcarpentry.github.io/git-novice/01-basics.html)
+
+## Git
+
+Git es un sistema de **control de versiones distribuido, gratuito y de código abierto**, diseñado para manejar todo tipo de proyectos, desde los más pequeños hasta los más grandes, con rapidez y eficiencia.
+
+Git es fácil de aprender y ocupa poco espacio con un **rendimiento rapidísimo**. Supera a las herramientas SCM como Subversion, CVS, Perforce y ClearCase con características como la ramificación local barata, las cómodas áreas de preparación y los múltiples flujos de trabajo.
+
+En resumen:
+
+-   Git es un sistema de control de versiones
+
+-   Git funciona con GitHub, Bitbucket o GitLab
+
+## **Git vs controles de versión a mano**
+
+[![](https://comunidadbioinfo.github.io/cdsb2023/img/git_vers.png){width="600"}](https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html)
+
+Con Git cada contribuidor tiene una copia del repositorio central, con todos los archivos y la historia de los cambios por los que han pasado.
+
+## Recomendaciones para sus proyectos
+
+-   Dedicar un directorio exclusivo por proyecto.
+
+-   Es mejor organizarlo en un RStudio Project.
+
+-   Hacer un repositorio de Git.
+
+-   Trabajen como siempre, solo además de guardar, recuerden hacer `commit`
+
+-   De vez en vez hagan `push` de sus cambios cuando los hayan **verificado**.
+
+## 10.5 Proyectos colaborativos
+
+-   GitHub se parece más a un GoogleDoc que a un Word Document.
+
+-   Es fácil que los colaboradores hagan cambios y también es fácil saber quién hizo que.
+
+-   El owner del proyecto puede dar permisos a los diferentes colaboradores.
+
+-   También existen organizaciones, esto puede ser útil para manejar los permisos de grupos grandes de colaboración.
+
+## GitHub
+
+[GitHub](https://github.com/about) es una plataforma para guardar proyectos, hace uso de Git. Su principal utilidad es para generar código fuente de programas.
+
+También existen otras plataformas como [Bitbucked](https://bitbucket.org/product/) y [GitLab](https://about.gitlab.com/), las cuales funcionan de manera similar a GitHub.
+
+## Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)
+
+-   Por cualquier problema con la conexión entre RStudio y Git, siempre ten en cuenta la ubicación de dónde se instaló Git.
+
+    -   Puedes usar en la terminal `which git` (Mac y Linux)
+
+    -   O bien usar en la terminal `where git` (Windows)
+
+-   Recuerda que la terminal (línea de comandos, consola, shell o bash) es un programa en tu computadora que funciona para correr otros programas. Desde RStudio puedes abrir la **terminal**, lo cual es muy conveniente si estás trabajando en un proyecto. Puedes abrir una terminal con:
+
+    -   *Tools \> Terminal* (abre la terminal dentro del IDE de RStudio)
+
+    -   *Tools \> Shell* (abre una terminal externa a RStudio) \> Apply \> OK

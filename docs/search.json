@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Workshop sobre Git / Github 2024",
+    "section": "",
+    "text": "Información general\n\n\nSobre el curso 📌Requisitos previosAgenda 📆\n\n\nEste documento se basa en “Happy Git with R” de Jenny Bryan, los STAT 545 TAs, Jim Hester, así como lasguías practicas de Github.\n\nFechas: 16 y 18 octubre 2024\nDuración del curso: 3 horas y 30 minutos\n\nInstructora:\n\nEvelia Lorena Coss-Navarrete - PostDoc, LIIGH-UNAM.\n\nResumen:\nEste tutorial te enseñará los conceptos fundamentales de GitHub, incluyendo repositorios, ramas, confirmaciones y solicitudes de cambio. A través de la creación de tu propio repositorio personalizado y pagina web, aprenderás a gestionar el flujo de trabajo de las solicitudes de cambio, un método ampliamente utilizado para colaborar en la creación y revisión de código.\nObjetivos:\nEn esta guía rápida aprenderás a:\n\nCrear y gestionar un repositorio.\nIniciar y administrar una nueva rama.\nRealizar cambios en un archivo y enviarlos a GitHub como confirmación.\nCrear tu página de inicio en Github.\nCrear tu página web.\n\nCitar y reutilizar el material del curso\nLos datos del curso se pueden reutilizar y adaptar libremente con la debida atribución. Todos los datos de los cursos de estos repositorios están sujetos a la licencia Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).\n\n\n\nDebes tener una cuenta de usuario de GitHub. Para más información, consulta “Creación de una cuenta en GitHub”.\nNo necesitas saber cómo codificar, utilizar la línea de comandos o instalar Git (el software de control de versiones en el que está compilado GitHub).\nContar con una terminal con Git, en Windows puedes usar Git Bash.\n\n\n\n\n\n\n\n\n\n\nTema\nTiempo\n\n\n\n\n🔷 Sección 1 - Introduction and Quality control (1 h y 30 min) - (8:30 - 10:00 h)\n\n\n\n\nCreación de una cuenta en GitHub\n\n5 min\n\n\n\nIntroducción a Git / GitHub\n\n15 min\n\n\n\n\n\n\n\nPráctica 1: scATAC-seq Pre-Processing and Quality Control\n\n30 min\n\n\n☕ Coffee break (10 min) - (10:30-11:00 h) ☕\n\n\n\n🔷  Sección 2 - scATAC-seq Downstream analysis (2 h) - (11:00-13:00 h)\n\n\n\n\nPráctica 2: scATAC-seq Downstream\n\n1 h\n\n\n\nPractical 15: Analyses and scRNA-seq Integration\n\n1 h\n\n\n🍖🍗 Lunch (1 h) - (13:00 - 14:00) 🍖🍗\n\n\n\n🔷  Sección 3 - Motif analysis and results (14:00 - 15:30 h)\n\n\n\n\nPractical 16: Motif analysis with Signac\n\n30 min\n\n\n\nPractical 17: Exploring results (graphs)\n\n30 min\n\n\n\nOther tools used in scATAC-seq\n\n30 min"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introducción a Git / GitHub",
+    "section": "",
+    "text": "Este documento se basa en \"Happy Git with R\" de Jenny Bryan, los STAT 545 TAs, Jim Hester, asi como las guias practicas de Github."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n\nCode\n1 + 1\n\n\n[1] 2"
+  },
+  {
+    "objectID": "Bash.html#preparación-del-directorio-de-trabajo",
+    "href": "Bash.html#preparación-del-directorio-de-trabajo",
+    "title": "2  Recordatorio de pasos en Bash",
+    "section": "2.1 Preparación del directorio de trabajo",
+    "text": "2.1 Preparación del directorio de trabajo\n\nRuta / Camino absoluto\ncd /home/usuario/data/\n\n\n\nRuta / Camino relativo\ncd ../ # Ir a la carpeta anterior"
+  },
+  {
+    "objectID": "Bash.html#comandos-básicos",
+    "href": "Bash.html#comandos-básicos",
+    "title": "2  Recordatorio de pasos en Bash",
+    "section": "2.2 Comandos básicos",
+    "text": "2.2 Comandos básicos\n\n\n\n\n\n\n\n\nComandos\nInformación\nArgumentos\n\n\n\n\nssh\nConexión a servidores\nssh usuario@servidor.mx\n\n\nls\nObservar el contenido de los archivos en una carpeta\nls directorio/\n\n\ncd\nMoverse de directorios\ncd /home/usuario/data/\n\n\nmkdir\nCrear un nuevo directorio\nmkdir data\n\n\nrmdir\nEliminar el directorio\nrmkdir -rf data\n\n\nnano / vim\nEditores de texto plano\nnano Archivo.txt / vim Archivo.txt\n\n\ncp\nCopiar archivos\ncp Archivo1.txt /home/usuario/data/\n\n\nmv\nMover un archivo o carpeta\n\n\n\necho\nPara llamar y/o declarar variables\necho “Hello world”\n\n\nchmod\nCambiar permisos del usuario\nchmod 777 data/\n\n\nrsync\nDescargar o subir archivos\n\n\n\nscp\nDescargar o subir archivos"
+  },
+  {
+    "objectID": "intro.html#por-qué-hacer-control-de-versiones-de-nuestros-proyectos",
+    "href": "intro.html#por-qué-hacer-control-de-versiones-de-nuestros-proyectos",
+    "title": "1  Introducción a Git / GitHub",
+    "section": "1.1 ¿Por qué hacer control de versiones de nuestros proyectos?",
+    "text": "1.1 ¿Por qué hacer control de versiones de nuestros proyectos?\n\n✅ Los proyectos suelen cambiar y crecer.\n💾 Es díficil saber cuáles fueron todos los cambios a lo largo del tiempo (en especial tiempos largos, hazlo por tu yo del futuro!).\n🤔 Las colaboraciones se pueden complicar sin un buen control de versiones.\n🔐 Seguridad.\n\n\n\n\n“notFinal.doc” by Jorge Cham, https://www.phdcomics.com"
+  },
+  {
+    "objectID": "intro.html#git",
+    "href": "intro.html#git",
+    "title": "1  Introducción a Git / GitHub",
+    "section": "1.2 Git",
+    "text": "1.2 Git\nGit es un sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para manejar todo tipo de proyectos, desde los más pequeños hasta los más grandes, con rapidez y eficiencia.\nGit es fácil de aprender y ocupa poco espacio con un rendimiento rapidísimo. Supera a las herramientas SCM como Subversion, CVS, Perforce y ClearCase con características como la ramificación local barata, las cómodas áreas de preparación y los múltiples flujos de trabajo.\nEn resumen:\n\nGit es un sistema de control de versiones\nGit funciona con GitHub, Bitbucket o GitLab"
+  },
+  {
+    "objectID": "intro.html#git-vs-controles-de-versión-a-mano",
+    "href": "intro.html#git-vs-controles-de-versión-a-mano",
+    "title": "1  Introducción a Git / GitHub",
+    "section": "1.3 Git vs controles de versión a mano",
+    "text": "1.3 Git vs controles de versión a mano\n\n\n\n\n\nCon Git cada contribuidor tiene una copia del repositorio central, con todos los archivos y la historia de los cambios por los que han pasado."
+  }
+]
