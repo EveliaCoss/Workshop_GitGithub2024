@@ -1,5 +1,15 @@
 # Introducción a Git / GitHub
 
+## **Objetivo de este mini curso: 📌**
+
+### **Hacia una biología computacional más reproducible, transparente y colaborativa 💜**
+
+::: callout-tip
+\"Los hechos individuales no reproducibles no tienen ninguna importancia para la ciencia\"
+
+Karl Popper
+:::
+
 ## ¿Por qué hacer control de versiones de nuestros proyectos?
 
 1.  ✅ Los proyectos suelen cambiar y crecer.
@@ -110,7 +120,6 @@ Deberan contar con:
 ## Referencias
 
 -   Haydee tutorial: [Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos](https://haydeeperuyero.github.io/Computo_Cientifico/)
-
 -   Github tutorial: [Trabajar con contraseñas de clave SSH](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)
-
 -   Alejandra Medina tutorial: [Control de versiones con GitHub y RStudio](https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html)
+-   [Hacia una biología computacional más reproducible, transparente y colaborativa](https://ellipse.prbb.org/es/hacia-una-biologia-computacional-mas-reproducible-transparente-y-colaborativa/)

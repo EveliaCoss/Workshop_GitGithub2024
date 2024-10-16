@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Workshop sobre Git / Github 2024 - 1&nbsp; Introducción a Git / GitHub</title>
+<title>Workshop sobre Git / Github 2024 - 2&nbsp; Introducción a Git / GitHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Bash.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./Parte2.html" rel="next">
+<link href="./Bash.html" rel="prev">
 <link href="./ViernesBioinfo_logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción a Git / GitHub</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a Git / GitHub</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -136,26 +136,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción a Git / GitHub</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./Bash.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Recordatorio de pasos en Bash</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Recordatorio de pasos en Bash</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a Git / GitHub</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./Parte2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Comandos usados en Github y RStudio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Parte3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Buenas practicas en R</span></span></a>
   </div>
 </li>
     </ul>
@@ -168,15 +168,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#por-qué-hacer-control-de-versiones-de-nuestros-proyectos" id="toc-por-qué-hacer-control-de-versiones-de-nuestros-proyectos" class="nav-link active" data-scroll-target="#por-qué-hacer-control-de-versiones-de-nuestros-proyectos"><span class="header-section-number">1.1</span> ¿Por qué hacer control de versiones de nuestros proyectos?</a></li>
-  <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git"><span class="header-section-number">1.2</span> Git</a></li>
-  <li><a href="#git-vs-controles-de-versión-a-mano" id="toc-git-vs-controles-de-versión-a-mano" class="nav-link" data-scroll-target="#git-vs-controles-de-versión-a-mano"><span class="header-section-number">1.3</span> <strong>Git vs controles de versión a mano</strong></a></li>
-  <li><a href="#recomendaciones-para-sus-proyectos" id="toc-recomendaciones-para-sus-proyectos" class="nav-link" data-scroll-target="#recomendaciones-para-sus-proyectos"><span class="header-section-number">1.4</span> Recomendaciones para sus proyectos</a></li>
-  <li><a href="#proyectos-colaborativos" id="toc-proyectos-colaborativos" class="nav-link" data-scroll-target="#proyectos-colaborativos"><span class="header-section-number">1.5</span> 10.5 Proyectos colaborativos</a></li>
-  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github"><span class="header-section-number">1.6</span> GitHub</a></li>
-  <li><a href="#manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario" id="toc-manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario" class="nav-link" data-scroll-target="#manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario"><span class="header-section-number">1.7</span> Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)</a></li>
-  <li><a href="#clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo" id="toc-clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo" class="nav-link" data-scroll-target="#clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo"><span class="header-section-number">1.8</span> Clonar un repositorio y tener conexión/permisos para modificarlo</a></li>
-  <li><a href="#conectar-a-github-con-ssh" id="toc-conectar-a-github-con-ssh" class="nav-link" data-scroll-target="#conectar-a-github-con-ssh"><span class="header-section-number">1.9</span> Conectar a GitHub con SSH</a></li>
+  <li><a href="#objetivo-de-este-mini-curso" id="toc-objetivo-de-este-mini-curso" class="nav-link active" data-scroll-target="#objetivo-de-este-mini-curso"><span class="header-section-number">2.1</span> <strong>Objetivo de este mini curso: 📌</strong></a>
+  <ul>
+  <li><a href="#hacia-una-biología-computacional-más-reproducible-transparente-y-colaborativa" id="toc-hacia-una-biología-computacional-más-reproducible-transparente-y-colaborativa" class="nav-link" data-scroll-target="#hacia-una-biología-computacional-más-reproducible-transparente-y-colaborativa"><span class="header-section-number">2.1.1</span> <strong>Hacia una biología computacional más reproducible, transparente y colaborativa 💜</strong></a></li>
+  </ul></li>
+  <li><a href="#por-qué-hacer-control-de-versiones-de-nuestros-proyectos" id="toc-por-qué-hacer-control-de-versiones-de-nuestros-proyectos" class="nav-link" data-scroll-target="#por-qué-hacer-control-de-versiones-de-nuestros-proyectos"><span class="header-section-number">2.2</span> ¿Por qué hacer control de versiones de nuestros proyectos?</a></li>
+  <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git"><span class="header-section-number">2.3</span> Git</a></li>
+  <li><a href="#git-vs-controles-de-versión-a-mano" id="toc-git-vs-controles-de-versión-a-mano" class="nav-link" data-scroll-target="#git-vs-controles-de-versión-a-mano"><span class="header-section-number">2.4</span> <strong>Git vs controles de versión a mano</strong></a></li>
+  <li><a href="#recomendaciones-para-sus-proyectos" id="toc-recomendaciones-para-sus-proyectos" class="nav-link" data-scroll-target="#recomendaciones-para-sus-proyectos"><span class="header-section-number">2.5</span> Recomendaciones para sus proyectos</a></li>
+  <li><a href="#proyectos-colaborativos" id="toc-proyectos-colaborativos" class="nav-link" data-scroll-target="#proyectos-colaborativos"><span class="header-section-number">2.6</span> 10.5 Proyectos colaborativos</a></li>
+  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github"><span class="header-section-number">2.7</span> GitHub</a></li>
+  <li><a href="#manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario" id="toc-manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario" class="nav-link" data-scroll-target="#manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario"><span class="header-section-number">2.8</span> Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)</a></li>
+  <li><a href="#clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo" id="toc-clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo" class="nav-link" data-scroll-target="#clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo"><span class="header-section-number">2.9</span> Clonar un repositorio y tener conexión/permisos para modificarlo</a></li>
+  <li><a href="#conectar-a-github-con-ssh" id="toc-conectar-a-github-con-ssh" class="nav-link" data-scroll-target="#conectar-a-github-con-ssh"><span class="header-section-number">2.10</span> Conectar a GitHub con SSH</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">2.11</span> Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -185,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción a Git / GitHub</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a Git / GitHub</span></h1>
 </div>
 
 
@@ -200,8 +205,28 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="por-qué-hacer-control-de-versiones-de-nuestros-proyectos" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="por-qué-hacer-control-de-versiones-de-nuestros-proyectos"><span class="header-section-number">1.1</span> ¿Por qué hacer control de versiones de nuestros proyectos?</h2>
+<section id="objetivo-de-este-mini-curso" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="objetivo-de-este-mini-curso"><span class="header-section-number">2.1</span> <strong>Objetivo de este mini curso: 📌</strong></h2>
+<section id="hacia-una-biología-computacional-más-reproducible-transparente-y-colaborativa" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="hacia-una-biología-computacional-más-reproducible-transparente-y-colaborativa"><span class="header-section-number">2.1.1</span> <strong>Hacia una biología computacional más reproducible, transparente y colaborativa 💜</strong></h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>"Los hechos individuales no reproducibles no tienen ninguna importancia para la ciencia"</p>
+<p>Karl Popper</p>
+</div>
+</div>
+</section>
+</section>
+<section id="por-qué-hacer-control-de-versiones-de-nuestros-proyectos" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="por-qué-hacer-control-de-versiones-de-nuestros-proyectos"><span class="header-section-number">2.2</span> ¿Por qué hacer control de versiones de nuestros proyectos?</h2>
 <ol type="1">
 <li>✅ Los proyectos suelen cambiar y crecer.</li>
 <li>💾 Es díficil saber cuáles fueron todos los cambios a lo largo del tiempo (en especial tiempos largos, hazlo por tu yo del <strong>futuro!</strong>).</li>
@@ -215,8 +240,8 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="git" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="git"><span class="header-section-number">1.2</span> Git</h2>
+<section id="git" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="git"><span class="header-section-number">2.3</span> Git</h2>
 <p>Git es un sistema de <strong>control de versiones distribuido, gratuito y de código abierto</strong>, diseñado para manejar todo tipo de proyectos, desde los más pequeños hasta los más grandes, con rapidez y eficiencia.</p>
 <p>Git es fácil de aprender y ocupa poco espacio con un <strong>rendimiento rapidísimo</strong>. Supera a las herramientas SCM como Subversion, CVS, Perforce y ClearCase con características como la ramificación local barata, las cómodas áreas de preparación y los múltiples flujos de trabajo.</p>
 <p>En resumen:</p>
@@ -225,8 +250,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Git funciona con GitHub, Bitbucket o GitLab</p></li>
 </ul>
 </section>
-<section id="git-vs-controles-de-versión-a-mano" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="git-vs-controles-de-versión-a-mano"><span class="header-section-number">1.3</span> <strong>Git vs controles de versión a mano</strong></h2>
+<section id="git-vs-controles-de-versión-a-mano" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="git-vs-controles-de-versión-a-mano"><span class="header-section-number">2.4</span> <strong>Git vs controles de versión a mano</strong></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html"><img src="https://comunidadbioinfo.github.io/cdsb2023/img/git_vers.png" class="img-fluid figure-img" width="600"></a></p>
@@ -234,8 +259,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Con Git cada contribuidor tiene una copia del repositorio central, con todos los archivos y la historia de los cambios por los que han pasado.</p>
 </section>
-<section id="recomendaciones-para-sus-proyectos" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="recomendaciones-para-sus-proyectos"><span class="header-section-number">1.4</span> Recomendaciones para sus proyectos</h2>
+<section id="recomendaciones-para-sus-proyectos" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="recomendaciones-para-sus-proyectos"><span class="header-section-number">2.5</span> Recomendaciones para sus proyectos</h2>
 <ul>
 <li><p>Dedicar un directorio exclusivo por proyecto.</p></li>
 <li><p>Es mejor organizarlo en un RStudio Project.</p></li>
@@ -244,8 +269,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>De vez en vez hagan <code>push</code> de sus cambios cuando los hayan <strong>verificado</strong>.</p></li>
 </ul>
 </section>
-<section id="proyectos-colaborativos" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="proyectos-colaborativos"><span class="header-section-number">1.5</span> 10.5 Proyectos colaborativos</h2>
+<section id="proyectos-colaborativos" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="proyectos-colaborativos"><span class="header-section-number">2.6</span> 10.5 Proyectos colaborativos</h2>
 <ul>
 <li><p>GitHub se parece más a un GoogleDoc que a un Word Document.</p></li>
 <li><p>Es fácil que los colaboradores hagan cambios y también es fácil saber quién hizo que.</p></li>
@@ -253,13 +278,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p>También existen organizaciones, esto puede ser útil para manejar los permisos de grupos grandes de colaboración.</p></li>
 </ul>
 </section>
-<section id="github" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="github"><span class="header-section-number">1.6</span> GitHub</h2>
+<section id="github" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="github"><span class="header-section-number">2.7</span> GitHub</h2>
 <p><a href="https://github.com/about">GitHub</a> es una plataforma para guardar proyectos, hace uso de Git. Su principal utilidad es para generar código fuente de programas.</p>
 <p>También existen otras plataformas como&nbsp;<a href="https://bitbucket.org/product/">Bitbucked</a>&nbsp;y&nbsp;<a href="https://about.gitlab.com/">GitLab</a>, las cuales funcionan de manera similar a GitHub.</p>
 </section>
-<section id="manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario"><span class="header-section-number">1.7</span> Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)</h2>
+<section id="manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario"><span class="header-section-number">2.8</span> Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)</h2>
 <ul>
 <li><p>Por cualquier problema con la conexión entre RStudio y Git, siempre ten en cuenta la ubicación de dónde se instaló Git.</p>
 <ul>
@@ -273,8 +298,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo"><span class="header-section-number">1.8</span> Clonar un repositorio y tener conexión/permisos para modificarlo</h2>
+<section id="clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo"><span class="header-section-number">2.9</span> Clonar un repositorio y tener conexión/permisos para modificarlo</h2>
 <ul>
 <li><p>Git puede comunicarse con un servidor remoto usando uno de dos protocolos, HTTPS o SSH, y cada protocolo usa credenciales diferentes.</p></li>
 <li><p>La recomendación actual de <strong>GitHub</strong> es usar HTTPS porque es la manera más fácil de configurar y tiene operatividad en múltiples redes y plataformas.</p>
@@ -286,12 +311,40 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Usualmente cuando inicies un proyecto colaborativo con GitHub inicializa el repositorio con un README. Copia el HTTPS URL para clonar el repositorio en la terminal <code>git clone</code> <code>https://github.com/TU-USUARIO/TU-REPOSITORIO.git</code>.</p></li>
 </ul>
 </section>
-<section id="conectar-a-github-con-ssh" class="level2" data-number="1.9">
-<h2 data-number="1.9" class="anchored" data-anchor-id="conectar-a-github-con-ssh"><span class="header-section-number">1.9</span> Conectar a GitHub con SSH</h2>
+<section id="conectar-a-github-con-ssh" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="conectar-a-github-con-ssh"><span class="header-section-number">2.10</span> Conectar a GitHub con SSH</h2>
 <p>Puedes conectarte a GitHub utilizando el <strong>Protocolo de Secure Shell (SSH),</strong> lo cual proporciona un canal seguro sobre una red insegura.</p>
 <p>Puedes asegurar tus claves SSH y configurar un agente de autenticación para no tener que volver a ingresar tu contraseña cada vez que uses tus claves SSH.</p>
 <p>Aqui esta la guia que puedes seguir <a href="https://docs.github.com/es/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases" class="uri">https://docs.github.com/es/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases</a>.</p>
 <p>Tambien puedes crear tokens para usar la via HTTPs, puedes seguir los pasos en <a href="https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html">este tutorial</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Actividad (15 min):
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Deberan contar con:</p>
+<ol type="1">
+<li><p>Una cuenta en GitHub</p></li>
+<li><p><strong>R</strong> y <strong>RStudio</strong> actualizados</p></li>
+<li><p>Git instalado</p></li>
+<li><p><a href="https://haydeeperuyero.github.io/Computo_Cientifico/git-y-github.html">Conectar Github con SSH o HTTPs.</a></p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="referencias" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="referencias"><span class="header-section-number">2.11</span> Referencias</h2>
+<ul>
+<li>Haydee tutorial: <a href="https://haydeeperuyero.github.io/Computo_Cientifico/">Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos</a></li>
+<li>Github tutorial: <a href="https://docs.github.com/es/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases">Trabajar con contraseñas de clave SSH</a></li>
+<li>Alejandra Medina tutorial: <a href="https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html">Control de versiones con GitHub y RStudio</a></li>
+<li><a href="https://ellipse.prbb.org/es/hacia-una-biologia-computacional-mas-reproducible-transparente-y-colaborativa/">Hacia una biología computacional más reproducible, transparente y colaborativa</a></li>
+</ul>
 
 
 </section>
@@ -647,13 +700,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Información general</span>
+      <a href="./Bash.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Recordatorio de pasos en Bash</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Bash.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Recordatorio de pasos en Bash</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Parte2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Comandos usados en Github y RStudio</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
