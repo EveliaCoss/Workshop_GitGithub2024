@@ -171,6 +171,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#por-qué-hacer-control-de-versiones-de-nuestros-proyectos" id="toc-por-qué-hacer-control-de-versiones-de-nuestros-proyectos" class="nav-link active" data-scroll-target="#por-qué-hacer-control-de-versiones-de-nuestros-proyectos"><span class="header-section-number">1.1</span> ¿Por qué hacer control de versiones de nuestros proyectos?</a></li>
   <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git"><span class="header-section-number">1.2</span> Git</a></li>
   <li><a href="#git-vs-controles-de-versión-a-mano" id="toc-git-vs-controles-de-versión-a-mano" class="nav-link" data-scroll-target="#git-vs-controles-de-versión-a-mano"><span class="header-section-number">1.3</span> <strong>Git vs controles de versión a mano</strong></a></li>
+  <li><a href="#recomendaciones-para-sus-proyectos" id="toc-recomendaciones-para-sus-proyectos" class="nav-link" data-scroll-target="#recomendaciones-para-sus-proyectos"><span class="header-section-number">1.4</span> Recomendaciones para sus proyectos</a></li>
+  <li><a href="#proyectos-colaborativos" id="toc-proyectos-colaborativos" class="nav-link" data-scroll-target="#proyectos-colaborativos"><span class="header-section-number">1.5</span> 10.5 Proyectos colaborativos</a></li>
+  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github"><span class="header-section-number">1.6</span> GitHub</a></li>
+  <li><a href="#manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario" id="toc-manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario" class="nav-link" data-scroll-target="#manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario"><span class="header-section-number">1.7</span> Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)</a></li>
+  <li><a href="#clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo" id="toc-clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo" class="nav-link" data-scroll-target="#clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo"><span class="header-section-number">1.8</span> Clonar un repositorio y tener conexión/permisos para modificarlo</a></li>
+  <li><a href="#conectar-a-github-con-ssh" id="toc-conectar-a-github-con-ssh" class="nav-link" data-scroll-target="#conectar-a-github-con-ssh"><span class="header-section-number">1.9</span> Conectar a GitHub con SSH</a></li>
   </ul>
 </nav>
     </div>
@@ -227,6 +233,65 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>Con Git cada contribuidor tiene una copia del repositorio central, con todos los archivos y la historia de los cambios por los que han pasado.</p>
+</section>
+<section id="recomendaciones-para-sus-proyectos" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="recomendaciones-para-sus-proyectos"><span class="header-section-number">1.4</span> Recomendaciones para sus proyectos</h2>
+<ul>
+<li><p>Dedicar un directorio exclusivo por proyecto.</p></li>
+<li><p>Es mejor organizarlo en un RStudio Project.</p></li>
+<li><p>Hacer un repositorio de Git.</p></li>
+<li><p>Trabajen como siempre, solo además de guardar, recuerden hacer <code>commit</code></p></li>
+<li><p>De vez en vez hagan <code>push</code> de sus cambios cuando los hayan <strong>verificado</strong>.</p></li>
+</ul>
+</section>
+<section id="proyectos-colaborativos" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="proyectos-colaborativos"><span class="header-section-number">1.5</span> 10.5 Proyectos colaborativos</h2>
+<ul>
+<li><p>GitHub se parece más a un GoogleDoc que a un Word Document.</p></li>
+<li><p>Es fácil que los colaboradores hagan cambios y también es fácil saber quién hizo que.</p></li>
+<li><p>El owner del proyecto puede dar permisos a los diferentes colaboradores.</p></li>
+<li><p>También existen organizaciones, esto puede ser útil para manejar los permisos de grupos grandes de colaboración.</p></li>
+</ul>
+</section>
+<section id="github" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="github"><span class="header-section-number">1.6</span> GitHub</h2>
+<p><a href="https://github.com/about">GitHub</a> es una plataforma para guardar proyectos, hace uso de Git. Su principal utilidad es para generar código fuente de programas.</p>
+<p>También existen otras plataformas como&nbsp;<a href="https://bitbucket.org/product/">Bitbucked</a>&nbsp;y&nbsp;<a href="https://about.gitlab.com/">GitLab</a>, las cuales funcionan de manera similar a GitHub.</p>
+</section>
+<section id="manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario"><span class="header-section-number">1.7</span> Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)</h2>
+<ul>
+<li><p>Por cualquier problema con la conexión entre RStudio y Git, siempre ten en cuenta la ubicación de dónde se instaló Git.</p>
+<ul>
+<li><p>Puedes usar en la terminal <code>which git</code> (Mac y Linux)</p></li>
+<li><p>O bien usar en la terminal <code>where git</code> (Windows)</p></li>
+</ul></li>
+<li><p>Recuerda que la terminal (línea de comandos, consola, shell o bash) es un programa en tu computadora que funciona para correr otros programas. Desde RStudio puedes abrir la <strong>terminal</strong>, lo cual es muy conveniente si estás trabajando en un proyecto. Puedes abrir una terminal con:</p>
+<ul>
+<li><p><em>Tools &gt; Terminal</em> (abre la terminal dentro del IDE de RStudio)</p></li>
+<li><p><em>Tools &gt; Shell</em> (abre una terminal externa a RStudio) &gt; Apply &gt; OK</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo"><span class="header-section-number">1.8</span> Clonar un repositorio y tener conexión/permisos para modificarlo</h2>
+<ul>
+<li><p>Git puede comunicarse con un servidor remoto usando uno de dos protocolos, HTTPS o SSH, y cada protocolo usa credenciales diferentes.</p></li>
+<li><p>La recomendación actual de <strong>GitHub</strong> es usar HTTPS porque es la manera más fácil de configurar y tiene operatividad en múltiples redes y plataformas.</p>
+<ul>
+<li><p>Es menos probable que HTTPS sea bloqueado por un firewall.</p></li>
+<li><p>Una conexión HTTPS permite que credential.helper almacene en caché su contraseña. (por tanto puedes configurar tu usuario y contraseña en tu equipo de uso).</p></li>
+<li><p>Es más sencillo acceder a un repositorio desde cualquier lugar, ya que solo necesitas los detalles de tu cuenta (no se requieren claves <strong>SSH</strong>) para escribir en el repositorio.</p></li>
+</ul></li>
+<li><p>Usualmente cuando inicies un proyecto colaborativo con GitHub inicializa el repositorio con un README. Copia el HTTPS URL para clonar el repositorio en la terminal <code>git clone</code> <code>https://github.com/TU-USUARIO/TU-REPOSITORIO.git</code>.</p></li>
+</ul>
+</section>
+<section id="conectar-a-github-con-ssh" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="conectar-a-github-con-ssh"><span class="header-section-number">1.9</span> Conectar a GitHub con SSH</h2>
+<p>Puedes conectarte a GitHub utilizando el <strong>Protocolo de Secure Shell (SSH),</strong> lo cual proporciona un canal seguro sobre una red insegura.</p>
+<p>Puedes asegurar tus claves SSH y configurar un agente de autenticación para no tener que volver a ingresar tu contraseña cada vez que uses tus claves SSH.</p>
+<p>Aqui esta la guia que puedes seguir <a href="https://docs.github.com/es/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases" class="uri">https://docs.github.com/es/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases</a>.</p>
+<p>Tambien puedes crear tokens para usar la via HTTPs, puedes seguir los pasos en <a href="https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html">este tutorial</a>.</p>
 
 
 </section>

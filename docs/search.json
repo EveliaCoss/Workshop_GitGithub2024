@@ -54,5 +54,47 @@
     "title": "1  Introducción a Git / GitHub",
     "section": "1.3 Git vs controles de versión a mano",
     "text": "1.3 Git vs controles de versión a mano\n\n\n\n\n\nCon Git cada contribuidor tiene una copia del repositorio central, con todos los archivos y la historia de los cambios por los que han pasado."
+  },
+  {
+    "objectID": "intro.html#recomendaciones-para-sus-proyectos",
+    "href": "intro.html#recomendaciones-para-sus-proyectos",
+    "title": "1  Introducción a Git / GitHub",
+    "section": "1.4 Recomendaciones para sus proyectos",
+    "text": "1.4 Recomendaciones para sus proyectos\n\nDedicar un directorio exclusivo por proyecto.\nEs mejor organizarlo en un RStudio Project.\nHacer un repositorio de Git.\nTrabajen como siempre, solo además de guardar, recuerden hacer commit\nDe vez en vez hagan push de sus cambios cuando los hayan verificado."
+  },
+  {
+    "objectID": "intro.html#proyectos-colaborativos",
+    "href": "intro.html#proyectos-colaborativos",
+    "title": "1  Introducción a Git / GitHub",
+    "section": "1.5 10.5 Proyectos colaborativos",
+    "text": "1.5 10.5 Proyectos colaborativos\n\nGitHub se parece más a un GoogleDoc que a un Word Document.\nEs fácil que los colaboradores hagan cambios y también es fácil saber quién hizo que.\nEl owner del proyecto puede dar permisos a los diferentes colaboradores.\nTambién existen organizaciones, esto puede ser útil para manejar los permisos de grupos grandes de colaboración."
+  },
+  {
+    "objectID": "intro.html#github",
+    "href": "intro.html#github",
+    "title": "1  Introducción a Git / GitHub",
+    "section": "1.6 GitHub",
+    "text": "1.6 GitHub\nGitHub es una plataforma para guardar proyectos, hace uso de Git. Su principal utilidad es para generar código fuente de programas.\nTambién existen otras plataformas como Bitbucked y GitLab, las cuales funcionan de manera similar a GitHub."
+  },
+  {
+    "objectID": "intro.html#manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario",
+    "href": "intro.html#manual-de-sobreviviencia-con-git-y-github-en-rstudio-en-caso-de-ser-necesario",
+    "title": "1  Introducción a Git / GitHub",
+    "section": "1.7 Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)",
+    "text": "1.7 Manual de sobreviviencia con Git Y GitHub en RStudio (en caso de ser necesario)\n\nPor cualquier problema con la conexión entre RStudio y Git, siempre ten en cuenta la ubicación de dónde se instaló Git.\n\nPuedes usar en la terminal which git (Mac y Linux)\nO bien usar en la terminal where git (Windows)\n\nRecuerda que la terminal (línea de comandos, consola, shell o bash) es un programa en tu computadora que funciona para correr otros programas. Desde RStudio puedes abrir la terminal, lo cual es muy conveniente si estás trabajando en un proyecto. Puedes abrir una terminal con:\n\nTools &gt; Terminal (abre la terminal dentro del IDE de RStudio)\nTools &gt; Shell (abre una terminal externa a RStudio) &gt; Apply &gt; OK"
+  },
+  {
+    "objectID": "intro.html#clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo",
+    "href": "intro.html#clonar-un-repositorio-y-tener-conexiónpermisos-para-modificarlo",
+    "title": "1  Introducción a Git / GitHub",
+    "section": "1.8 Clonar un repositorio y tener conexión/permisos para modificarlo",
+    "text": "1.8 Clonar un repositorio y tener conexión/permisos para modificarlo\n\nGit puede comunicarse con un servidor remoto usando uno de dos protocolos, HTTPS o SSH, y cada protocolo usa credenciales diferentes.\nLa recomendación actual de GitHub es usar HTTPS porque es la manera más fácil de configurar y tiene operatividad en múltiples redes y plataformas.\n\nEs menos probable que HTTPS sea bloqueado por un firewall.\nUna conexión HTTPS permite que credential.helper almacene en caché su contraseña. (por tanto puedes configurar tu usuario y contraseña en tu equipo de uso).\nEs más sencillo acceder a un repositorio desde cualquier lugar, ya que solo necesitas los detalles de tu cuenta (no se requieren claves SSH) para escribir en el repositorio.\n\nUsualmente cuando inicies un proyecto colaborativo con GitHub inicializa el repositorio con un README. Copia el HTTPS URL para clonar el repositorio en la terminal git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git."
+  },
+  {
+    "objectID": "intro.html#conectar-a-github-con-ssh",
+    "href": "intro.html#conectar-a-github-con-ssh",
+    "title": "1  Introducción a Git / GitHub",
+    "section": "1.9 Conectar a GitHub con SSH",
+    "text": "1.9 Conectar a GitHub con SSH\nPuedes conectarte a GitHub utilizando el Protocolo de Secure Shell (SSH), lo cual proporciona un canal seguro sobre una red insegura.\nPuedes asegurar tus claves SSH y configurar un agente de autenticación para no tener que volver a ingresar tu contraseña cada vez que uses tus claves SSH.\nAqui esta la guia que puedes seguir https://docs.github.com/es/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases.\nTambien puedes crear tokens para usar la via HTTPs, puedes seguir los pasos en este tutorial."
   }
 ]

@@ -9,10 +9,10 @@ book:
   page-navigation: true
   chapters:
     - index.qmd
-    - intro.qmd
     - Bash.qmd
-    - summary.qmd
-    - references.qmd
+    - intro.qmd
+    - Parte2.qmd
+    - Parte3.qmd
   # Information
   repo-url: https://github.com/EveliaCoss/Workshop_GitGithub2024 # link de Github
   sharing: [twitter, facebook, linkedin]
