@@ -1,1 +1,1 @@
-# Workshop_GitGithub2024
+# Workshop sobre Git / Github 2024
